@@ -15,8 +15,8 @@ class createUsersTable extends Migration
             $table->string('name');
             $table->string('email');
             $table->string('password');
-
-        });
+        }
+    );
     }
 
     public function down()

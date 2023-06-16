@@ -15,8 +15,8 @@ class CreateEventsTable extends Migration
             $table->string('name');
             $table->string('location');
             $table->int('time');
-
-        });
+        }
+    );
     }
 
     public function down()

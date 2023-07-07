@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/0538fc5c28.js" crossorigin="anonymous"></script>
     <title>welcome page</title>
 </head>
 {{------------------------------style---------------------------------------}}
@@ -13,6 +14,7 @@ body{
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-size: cover;
+    opacity: 0.9;
     position: relative;
     height: 100vh;
     width: 100%;
@@ -31,15 +33,6 @@ body::before {
     z-index: -1;
 }
 
-.overlay {
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        background-color:  rgba(110, 15, 94, 0.2);
-    }
-
 .header{
     font-size: 20px;
     color: rgb(232, 243, 252);
@@ -48,22 +41,23 @@ body::before {
 }
 
 .custom-button{
-background-color: white;
-color: darkmagenta;
-padding: 10px 20px;
-border: round;
-border-radius: 4px;
-cursor: pointer;
+    background-color: rgb(8, 3, 3);
+    color: darkmagenta;
+    padding: 10px 20px;
+    border: round;
+    border-radius: 4px;
+    cursor: pointer;
 }
 
 nav {
-    background-color: darkmagenta;
-    padding: 10px;
+    display: flex;
+    padding: 0px;
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
     align-items: right;
+    justify-content: space-between;
 }
 
 nav ul {
@@ -72,7 +66,7 @@ nav ul {
     padding: 0;
     display: flex;
     justify-content: space-between;
-    margin-left: 20px;
+    margin-left: 10px;
     flex-wrap: wrap;
 }
 
@@ -90,12 +84,27 @@ nav ul li:first-child {
 nav ul li a {
     text-decoration: none;
     color: aliceblue;
-    font-size: 20px;
-    position: relative;
+    font-size: 22px;
+    text-align: right;
 }
 
 #navbar {
     transition: top 0.3s ease-in-out;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#sidemenu {
+    display: flex;
+    align-items: center;
+}
+
+#sidemenu a {
+    text-decoration: none;
+    color: aliceblue;
+    font-size: 23px;
+    margin: 0 10px;
 }
 
 .navbar-hidden {
@@ -107,7 +116,6 @@ nav ul li a {
 }
 
 #navbar ul li.logo {
-    height: 40px;
     width: auto;
     margin-right: auto;
 }
@@ -120,6 +128,7 @@ nav ul li a {
 
 .logo{
     margin-right: auto;
+    width: 140px;
 }
 
 </style>
@@ -127,16 +136,18 @@ nav ul li a {
 <body>
 
 {{-------------------------------------------navbar----------------------------------}} 
-<div class="overlay"></div>
+
 <div class="header">
     <nav id="navbar">
-        <ul>
+        <ul id="sidemenu">
             <li class="logo"><img src="/images/logo.png"></li>
-            <li href="/">Home</li>
-            <li href="/admin">Admin</li>
-            <li href="/events">Events</li>
-            <li href="/login">Login</li>
+            <li><a href="/">Home</a></li>
+            <li><a href="/admin">Admin</a></li>
+            <li><a href="/events">Events</a></li>
+            <li><a href="/login">Login</a></li>
+            <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
         </ul>
+        <i class="fa-solid fa-bars" onclick="openmenu()"></i>
     </nav>
 </div>
 

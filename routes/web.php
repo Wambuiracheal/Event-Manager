@@ -24,3 +24,13 @@ Route::get('/about', function () {
 Route::get('/contact', function () {
     return view('contact');
 });
+
+Route::get('/event', function () {
+    return view('event');
+});
+
+Route::get('/merged-page', [MergedPageController::class, 'index'])->name('merged-page');
+
+Route::get('/merged-page', function () {
+    return view('merged-page');
+});

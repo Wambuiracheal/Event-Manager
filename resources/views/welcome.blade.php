@@ -20,6 +20,7 @@ body{
     width: 100%;
     margin: 0;
     padding: 0;
+    background-blend-mode: rgba(0, 0, 0, 0);
 }
 
 body::before {
@@ -40,8 +41,25 @@ body::before {
     padding-top: 100px;
 }
 
-.custom-button{
+.custom-button {
     background-color: rgb(8, 3, 3);
+    color: darkmagenta;
+    padding: 10px 20px;
+    border: round;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.custom-button a{
+    color: darkmagenta;
+    padding: 5px 10px;
+    border: round;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.custom-button:hover{
+    background-color: rgb(228, 153, 228);
     color: darkmagenta;
     padding: 10px 20px;
     border: round;
@@ -92,20 +110,9 @@ nav ul li a {
     transition: top 0.3s ease-in-out;
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items: right;
 }
 
-#sidemenu {
-    display: flex;
-    align-items: center;
-}
-
-#sidemenu a {
-    text-decoration: none;
-    color: aliceblue;
-    font-size: 23px;
-    margin: 0 10px;
-}
 
 .navbar-hidden {
     top: -100px;
@@ -145,9 +152,7 @@ nav ul li a {
             <li><a href="/admin">Admin</a></li>
             <li><a href="/events">Events</a></li>
             <li><a href="/login">Login</a></li>
-            <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
         </ul>
-        <i class="fa-solid fa-bars" onclick="openmenu()"></i>
     </nav>
 </div>
 
@@ -155,7 +160,7 @@ nav ul li a {
 <div class="header">
     <h1>Hepi Events</h1>
     <P>Where Trust meets Perfection</P>
-    <button type="button"  class="custom-button">Get started</button>
+    <button type="button"  class="custom-button"><a href="/register">Get started</a></button>
 </div> 
 </body>
 </html>

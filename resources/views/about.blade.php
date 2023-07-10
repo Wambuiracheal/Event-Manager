@@ -8,9 +8,13 @@
 </head>
 {{------------------------------------style-----------------------------------------}}
 <style>
+body{
+    background-color: #262626;
+}
+
 #about{
     padding: 80px 0;
-    color: #f8eaea;
+    color: #262626;
 }
 
 .row{
@@ -37,6 +41,10 @@
 
 .about-col-2 h1{
     color: rgb(192, 96, 192);
+}
+
+.about-col-2 p{
+    color: aliceblue;
 }
 
 </style>

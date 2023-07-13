@@ -4,104 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="styles.css">
     <title>event page</title>
 </head>
-{{-------------------------------------style----------------------------------}}
-<style>
-    * {
-        box-sizing: border-box;
-    }
-
-        
-    body {
-        font-family: Verdana, sans-serif;
-        margin: 0;
-        background-color: #262626;
-    }
-
-    .mySlides {
-        display: none;
-    }
-
-    img {
-        vertical-align: middle;
-        width: 100%;
-        height: auto; 
-        object-fit: cover; 
-    }
-
-    /* Slideshow container */
-    .slideshow-container {
-        max-width: 1000px;
-        position: relative;
-        margin: auto;
-    }
-
-    /* Next & previous buttons */
-    .prev, .next {
-        cursor: pointer;
-        position: absolute;
-        top: 50%;
-        width: auto;
-        padding: 16px;
-        margin-top: -22px;
-        color: darkmagenta;
-        font-weight: bold;
-        font-size: 20px;
-        transition: 0.6s ease;
-        border-radius: 0 3px 3px 0;
-        user-select: none;
-    }
-
-    /* Position the "next button" to the right */
-    .next {
-    right: 0;
-    border-radius: 3px 0 0 3px;
-    }
-
-    /* On hover, add a black background color with a little bit see-through */
-    .prev:hover, .next:hover {
-    background-color: rgb(192, 96, 192);
-    }
-
-    /* The dots/bullets/indicators */
-    .dot {
-    cursor: pointer;
-    height: 15px;
-    width: 15px;
-    margin: 0 2px;
-    background-color: darkmagenta;
-    border-radius: 50%;
-    display: inline-block;
-    transition: background-color 0.6s ease;
-    }
-
-    .active, .dot:hover {
-    background-color: rgb(192, 96, 192);
-    }
-
-    /* Fading animation */
-    .fade {
-    animation-name: fade;
-    animation-duration: 1.8s;
-    }
-
-    @keyframes fade {
-    from {opacity: .4} 
-    to {opacity: 1}
-    }
-
-    /* On smaller screens, decrease text size */
-    @media only screen and (max-width: 300px) {
-    .prev, .next,.text {font-size: 11px}
-    }
-
-</style>
-<body>
+<body class="event-body">
 <div class="slideshow-container">
 
     <div class="mySlides fade">
-        <img src="posters/poster1.jpg" style="width:100%">
+        <img src="posters/poster1.jpg" style="width:100%" >
     </div>
 
     <div class="mySlides fade">

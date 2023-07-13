@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\PageController;
 
 /*
 |--------------------------------------------------------------------------
@@ -29,8 +30,8 @@ Route::get('/event', function () {
     return view('event');
 });
 
-Route::get('/merged-page', [MergedPageController::class, 'index'])->name('merged-page');
-
-Route::get('/merged-page', function () {
-    return view('merged-page');
+Route::get('/login', function () {
+    return view('login');
 });
+
+Route::get('/merge-page', 'PageController@mergePage');

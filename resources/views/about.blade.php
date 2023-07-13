@@ -4,54 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="styles.css">
     <title>about page</title>
 </head>
-{{------------------------------------style-----------------------------------------}}
-<style>
-body{
-    background-color: #262626;
-}
-
-#about{
-    padding: 80px 0;
-    color: #262626;
-}
-
-.row{
-    display: flex;
-    justify-content: space-between;
-    word-wrap: wrap;
-    background-color: rgb(141, 29, 122);
-}
-
-.about-col-1{
-    flex-basis: 35%;
-}
-
-.about-col-1 img{
-    width: 100%;
-    border-radius: 10px;
-    width: 100%;
-    height: 100%;
-}
-
-.about-col-2{
-    flex-basis: 60%;
-}
-
-.about-col-2 h1{
-    color: rgb(192, 96, 192);
-}
-
-.about-col-2 p{
-    color: aliceblue;
-}
-
-</style>
-<body>
+<body class="about">
 <div id="about">
     <div class="container">
-        <div class="row">
+        <div class="about-row">
             <div class="about-col-1">
                 <img src="images/about.jpeg">
             </div>

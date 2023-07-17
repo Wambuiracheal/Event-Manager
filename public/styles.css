@@ -1,5 +1,5 @@
  /* ------------------------------------------------welcome page-------------------------------------------- */
- /* body  */
+ /* ------------------------------------------------navbar-----------------------------------------------------  */
 .back-ground{
     background-image: url('/images/background.jpeg');
     background-position: center;
@@ -66,8 +66,8 @@ nav ul li a {
     text-align: right;
 }
 
-/* header */
-.header{
+/*------------------------------------------------------header------------------------------------------------- */
+#header{
     font-size: 20px;
     color: rgb(232, 243, 252);
     text-align: center;
@@ -120,10 +120,6 @@ body{
 }
 
 /*--------------------------------------- about page---------------------------------------- */
-.about{
-    background-color: #262626;
-}
-
 #about{
     padding: 80px 0;
     color: #262626;
@@ -164,7 +160,7 @@ body{
     box-sizing: border-box;
 }
 
-.news-body {
+#news {
     margin: 0;
     background-color: #262626;
 }
@@ -242,7 +238,7 @@ to {opacity: 1}
 }
 
 /*--------------------------------------- contact page------------------------------------- */
-.contact{
+#contact{
     background-color: #262626;
 }
 
@@ -329,6 +325,7 @@ form input, form textarea{
     border-radius: 6px;
 }
 
+/* ---------------------------------------------------footer------------------------------------------------- */
 .copyright{
     width: 100%;
     text-align: center;

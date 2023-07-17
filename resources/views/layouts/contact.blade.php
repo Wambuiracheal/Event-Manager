@@ -1,15 +1,9 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <script src="https://kit.fontawesome.com/0538fc5c28.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="styles.css">
-    <title>contact page</title>
-</head>
-<body class="contact">
-<div id="contact">
+@extends('layouts.merge')
+
+@section('title','Contact Page')
+
+@section('content')
+<section id="contact">
 <div class="container">
 <div class="contact-row">
     <div class="contact-left">
@@ -35,6 +29,5 @@
     </div>
 </div>
 </div>
-</div>
-</body>
-</html>
+</section>
+@endsection

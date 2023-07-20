@@ -8,7 +8,7 @@ use App\Http\Controllers\NewsController;
 use App\Http\Controllers\ContactController;
 
 // Home page
-Route::get('/', [HomeController::class, 'welcome']);
+Route::get('/', [HomeController::class, 'home']);
 
 // About page
 Route::get('/about', [AboutController::class, 'about']);

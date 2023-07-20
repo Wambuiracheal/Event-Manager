@@ -1,10 +1,23 @@
 @extends('layouts.merge')
 
-@section('title','About Page')
+@section('title','News Page')
 
 @section('content')
-<section id="about">
-    <div class="container">
+<body class="about">
+{{--------------------------------- navbar --------------------------------}}
+    <nav id="navbar">
+        <ul id="sidemenu">
+            <li class="logo"><img src="/images/logo.png"></li>
+            <li><a href="/">Home</a></li>
+            <li><a href="/about">About</a></li>
+            <li><a href="/news">News</a></li>
+            <li><a href="/contact">Contact</a></li>
+            <li><a href="/events">Events</a></li>
+            <li><a href="/admin">Admin</a></li>
+            <li><a href="/login">Login</a></li>
+        </ul>
+    </nav>
+    <body class="container">
         <div class="about-row">
             <div class="about-col-1">
                 <img src="images/about.jpeg">

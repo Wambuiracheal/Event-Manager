@@ -7,8 +7,8 @@ use Illuminate\Routing\Controller;
 
 class HomeController extends Controller
 {
-    public function welcome()
+    public function home()
     {
-        return view('layouts.welcome');
+        return view('layouts.home');
     }
 }

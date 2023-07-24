@@ -15,7 +15,7 @@
     <div class="header">
         <nav id="navbar">
             <ul id="sidemenu">
-            <li class="logo"><img src="/images/logo.png"></li>
+            <li class="logo"><img src="/images/logo.png"></li> 
                 <li><a href="/">Home</a></li>
                 <li><a href="/about">About</a></li>
                 <li><a href="/news">News</a></li>

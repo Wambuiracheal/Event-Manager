@@ -1,6 +1,6 @@
 @extends('layouts.merge')
 
-@section('title','News Page')
+@section('title','News Page') 
 
 @section('content')
 <section id="news">

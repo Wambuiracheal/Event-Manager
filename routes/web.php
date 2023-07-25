@@ -8,7 +8,7 @@ use App\Http\Controllers\NewsController;
 use App\Http\Controllers\ContactController;
 
 // Home page
-Route::get('/', [HomeController::class, 'home']);
+Route::get('/', [HomeController::class, 'welcome']);
 
 // About page
 Route::get('/about', [AboutController::class, 'about']);
@@ -29,3 +29,7 @@ Route::get('/contact', [ContactController::class, 'contact']);
 | contains the "web" middleware group. Now create something great!
 |
 */
+
+Auth::routes();
+
+Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');

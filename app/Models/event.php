@@ -7,13 +7,14 @@ use Illuminate\Database\Eloquent\Model;
 
 class event extends Model
 {
-    protected $table = 'event';
+    protected $table = 'events';
     protected $fillable = [
         'event_name',
-        'time',
+        'description',
+        'start_date',
+        'end_date',
         'location',
         'amount',
-        'payment',
         'remember_token',
     ];
 

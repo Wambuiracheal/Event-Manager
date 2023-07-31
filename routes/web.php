@@ -1,34 +1,34 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-use App\Http\Controllers\EventsController;
+use App\Http\Controllers\EventController;
+use App\Http\Controllers\PageController;
 use App\Http\Controllers\HomeController;
 
 
 
 // Home page
-Route::get('/', [EventsController::class, 'welcome']);
+Route::get('/', [PageController::class, 'welcome']);
 
 // About page
-Route::get('/about', [EventsController::class, 'about']);
+Route::get('/about', [PageController::class, 'about']);
 
 // News page
-Route::get('/news', [EventsController::class, 'news']);
+Route::get('/news', [PageController::class, 'news']);
 
 // Contact page
-Route::get('/contact', [EventsController::class, 'contact']);
+Route::get('/contact', [PageController::class, 'contact']);
 
-/*
-|--------------------------------------------------------------------------
-| Web Routes
-|--------------------------------------------------------------------------
-|
-| Here is where you can register web routes for your application. These
-| routes are loaded by the RouteServiceProvider within a group which
-| contains the "web" middleware group. Now create something great!
-|
-*/
-
+//auth route for reg,login and password 
 Auth::routes();
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+
+//route for CRUD operations
+Route::resource('events', EventController::class);
+
+Route::get('/events/create', [EventController::class, 'create'])->name('events.create');
+
+Route::get('/events/edit', [EventController::class, 'edit'])->name('events.edit');
+
+Route::get('/events/show', [EventController::class, 'show'])->name('events.show');

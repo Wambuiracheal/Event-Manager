@@ -12,7 +12,7 @@
 <body class="back-ground">
 
     <!-- Navbar -->
-    <div class="header">
+    <div class="header"> 
         <nav id="navbar">
             <ul id="sidemenu">
             <li class="logo"><img src="/images/logo.png"></li> 

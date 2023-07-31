@@ -1,23 +1,22 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-use App\Http\Controllers\PageController;
+use App\Http\Controllers\EventsController;
 use App\Http\Controllers\HomeController;
-use App\Http\Controllers\AboutController;
-use App\Http\Controllers\NewsController;
-use App\Http\Controllers\ContactController;
+
+
 
 // Home page
-Route::get('/', [HomeController::class, 'welcome']);
+Route::get('/', [EventsController::class, 'welcome']);
 
 // About page
-Route::get('/about', [AboutController::class, 'about']);
+Route::get('/about', [EventsController::class, 'about']);
 
 // News page
-Route::get('/news', [NewsController::class, 'news']);
+Route::get('/news', [EventsController::class, 'news']);
 
 // Contact page
-Route::get('/contact', [ContactController::class, 'contact']);
+Route::get('/contact', [EventsController::class, 'contact']);
 
 /*
 |--------------------------------------------------------------------------

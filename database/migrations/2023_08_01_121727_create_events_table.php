@@ -15,13 +15,13 @@ return new class extends Migration
     {
         Schema::create('events', function (Blueprint $table){
             $table->increments('id');
-            $table->string('event_name');
+            $table->string('event_name')->default('')->nullable();            ;
             $table->text('description');
             $table->dateTime('start_date');
             $table->dateTime('end_date');
             $table->string('location');
-            $table->string('amount');
-            $table->string('payment');
+            $table->decimal('amount',10,2)->default(0);
+            $table->string('payment')->default('')->nullable();
             $table->rememberToken();
             $table->timestamps();
         });
@@ -34,6 +34,6 @@ return new class extends Migration
      */
     public function down()
     {
-        //
+        Schema::dropIfExists('events');
     }
 };

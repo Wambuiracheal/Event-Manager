@@ -1,5 +1,3 @@
-<!-- create.blade.php -->
-
 @extends('layouts.app')
 
 @section('content')
@@ -10,8 +8,8 @@
             <form action="{{ route('events.store') }}" method="POST">
                 @csrf
                 <div class="form-group">
-                    <label for="title">Event Name</label>
-                    <input type="text" name="title" id="title" class="form-control" required>
+                    <label for="event_name">Event Name</label>
+                    <input type="text" name="event_name" id="event_name" class="form-control" required>
                 </div>
                 <div class="form-group">
                     <label for="description">Description</label>
@@ -25,13 +23,21 @@
                     <label for="end_date">End Date</label>
                     <input type="datetime-local" name="end_date" id="end_date" class="form-control" required>
                 </div>
-
+            
                 <div class="form-group">
                     <label for="location">Location</label>
-                    <input type="text" name="location" id="location" class="form-control" required>
+                    <textarea type="text" name="location" id="location" class="form-control" required></textarea>
                 </div>
+            
+                <div class="form-group">
+                    <label for="amount">Amount</label>
+                    <input type="number" name="amount" id="amount" class="form-control" required>
+                </div>
+            
+                <br>
                 <button type="submit" class="btn btn-primary">Create Event</button>
             </form>
+            
         </div>
     </div>
 </div>

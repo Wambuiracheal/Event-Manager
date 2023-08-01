@@ -10,6 +10,8 @@
             <p><strong>Start Date:</strong> {{ $event->start_date }}</p>
             <p><strong>End Date:</strong> {{ $event->end_date }}</p>
             <p><strong>Location:</strong> {{ $event->location }}</p>
+            <p><strong>Amount:</strong> {{ $event->amount }}</p>
+            <p><strong>Payment:</strong> {{ $event->payment }}</p>
             <a href="{{ route('events.edit', $event->id) }}" class="btn btn-info">Edit Event</a>
         </div>
     </div>

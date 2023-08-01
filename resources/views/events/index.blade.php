@@ -12,17 +12,20 @@
                         <th>Description</th>
                         <th>Start Date</th>
                         <th>End Date</th>
-                        <th>location</th>
+                        <th>Location</th>
                         <th>Actions</th>
                     </tr>
                 </thead>
                 <tbody>
                     @foreach ($events as $event)
                     <tr>
-                        <td>{{ $event->title }}</td>
+                        <td>{{ $event->event_name }}</td>
                         <td>{{ $event->description }}</td>
                         <td>{{ $event->start_date }}</td>
                         <td>{{ $event->end_date }}</td>
+                        <td>{{ $event->location }}</td>
+                        <td>{{ $event->amount }}</td>
+                        <td>{{ $event->payment === 'paid' ? 'Paid' : 'Not Paid' }}</td>
                         <td>
                             <a href="{{ route('events.show', $event->id) }}" class="btn btn-primary">View</a>
                             <a href="{{ route('events.edit', $event->id) }}" class="btn btn-info">Edit</a>

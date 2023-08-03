@@ -9,8 +9,8 @@
                 @csrf
                 @method('PUT')
                 <div class="form-group">
-                    <label for="title">Event Name</label>
-                    <input type="text" name="title" id="title" class="form-control" value="{{ $event->title }}" required>
+                    <label for="event_name">Event Name</label>
+                    <input type="text" name="event_name" id="event_name" class="form-control" value="{{ $event->event_name }}" required>
                 </div>
                 <div class="form-group">
                     <label for="description">Description</label>
@@ -27,8 +27,14 @@
 
                 <div class="form-group">
                     <label for="location">Location</label>
-                    <input type="text" name="location" id="location" class="form-control" required>
+                    <input type="text" name="location" id="location" class="form-control" value="{{ $event->location }}" required>
                 </div>
+
+                <div class="form-group">
+                    <label for="amount">Amount</label>
+                    <input type="number" name="amount" id="amount" class="form-control" value="{{ $event->amount }}" required>
+                </div>
+                <br>
                 <button type="submit" class="btn btn-primary">Update Event</button>
             </form>
         </div>

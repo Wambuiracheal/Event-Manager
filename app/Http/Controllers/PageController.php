@@ -38,4 +38,8 @@ class PageController extends Controller
         return view('layouts.merge');
     }
 
+    public function dashboard()
+    {
+        return view('admin.dashboard');
+    }
 }

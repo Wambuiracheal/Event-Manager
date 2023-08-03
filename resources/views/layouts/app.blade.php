@@ -35,6 +35,7 @@
 
                     <!-- Right Side Of Navbar -->
                     <ul class="navbar-nav ms-auto">
+
                         <!-- Authentication Links -->
                         @guest
                             @if (Route::has('login'))
@@ -70,6 +71,15 @@
                     </ul>
                 </div>
             </div>
+
+            <!----------------------admin dashboard link--------------------------------->
+            <ul class="navbar-nav ml-auto">
+                @auth
+                    <li class="nav-item">
+                        <a class="nav-link" href="{{ route('admin.dashboard') }}">Admin Dashboard</a>
+                    </li>
+                @endauth
+            </ul>
         </nav>
 
         <main class="py-4">

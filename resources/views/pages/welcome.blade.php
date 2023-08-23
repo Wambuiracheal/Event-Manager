@@ -19,7 +19,7 @@
                 <li><a href="/news">News</a></li>
                 <li><a href="/contact">Contact</a></li>
                 <li><a href="/events">Events</a></li>
-                <li><a href="/admin">Admin</a></li>
+                <li><a href="/dashboard">Admin</a></li>
                 <li><a href="/login">Login</a></li>
             </ul>
         </nav>

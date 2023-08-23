@@ -24,6 +24,14 @@
                 <li><a href="/admin">Admin</a></li>
                 <li><a href="/login">Login</a></li>    
             </ul>
+
+            <a href="{{ route('logout') }}" onclick="event.preventDefault(); document.getElementById('logout-form').submit();">
+                Logout
+            </a>
+            <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
+                @csrf
+            </form>
+            
         </nav>
     </div>
 
